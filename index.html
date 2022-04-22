@@ -100,6 +100,12 @@
   <div class="container mt-5">
     <h1>Book a FREE Consulation</h1>
     <form class="row g-3" action="https://formsubmit.co/360bc1cf041f91be252043f4dc5eaf66" method="post">
+      <!-- NOTE: honeypot -->
+      <input type="text" name="_honey" style="display: none;" value="">
+
+<!-- NOTE: Disable Captcha -->
+<input type="hidden" name="_captcha" value="false">
+
       <div class="col-md-6">
         <label for="FirstName" class="form-lable">First Name</label>
         <input type="text" class="form-control" id="FirstName" required name="name" value="">
@@ -141,7 +147,7 @@
           <textarea class="form-control" id="comments" name="comments or Questions" rows="3" cols="80"></textarea>
       </div>
       <div class="col-md-12">
-        <button type="submit" class="btn btn-dark" name="button">Submit</button>
+        <button type="submit" class="btn btn-dark" name="">Submit</button>
       </div>
     </form>
   </div>
